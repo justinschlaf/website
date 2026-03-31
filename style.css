@@ -1,0 +1,139 @@
+:root {
+    --green: #2ecc71;
+    --black: #121212;
+    --white: #ffffff;
+    --input-bg: #f9f9f9;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--black); }
+
+/* Navigation Steuerung */
+header {
+    background: var(--black);
+    color: white;
+    padding: 15px 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+body.is-home header { display: none; }
+
+nav { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.5rem; cursor: pointer; font-weight: bold; }
+.logo span { color: var(--green); }
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 20px; }
+nav ul li a { color: white; text-decoration: none; font-size: 0.9rem; transition: 0.3s; }
+nav ul li a:hover { color: var(--green); }
+
+/* Hero */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
+                url('https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+
+.hero-logo { font-size: 3.5rem; font-weight: bold; margin-bottom: 20px; }
+.hero-logo span { color: var(--green); }
+.hero-buttons { display: flex; gap: 20px; margin-top: 40px; }
+.main-btn {
+    background: var(--green);
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.main-btn:hover { background: #27ae60; transform: translateY(-3px); }
+
+/* Content */
+.content-section { padding: 120px 10% 60px; min-height: 100vh; }
+.grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.card { border: 1px solid #ddd; padding: 20px; border-radius: 8px; text-align: center; }
+.card img { width: 100%; height: 200px; object-fit: cover; border-radius: 4px; margin-bottom: 15px; }
+
+/* Formular / Modal */
+.modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 2000; overflow-y: auto; }
+.modal-content { background: white; width: 95%; max-width: 500px; margin: 40px auto; padding: 30px; border-radius: 8px; }
+.close { float: right; font-size: 28px; cursor: pointer; color: #999; }
+
+.form-row { display: flex; gap: 10px; margin-bottom: 10px; }
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: var(--input-bg);
+    font-family: inherit;
+}
+
+textarea { resize: vertical; }
+
+.submit-btn {
+    background: var(--green);
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+.submit-btn:hover { background: #27ae60; }
+
+
+/* Container für zwei Bilder in einer Karte */
+.img-wrapper {
+    display: flex;
+    gap: 10px;           /* Abstand zwischen den beiden Bildern */
+    margin-bottom: 15px; /* Abstand zum Text darunter */
+}
+
+.img-wrapper img {
+    width: calc(50% - 5px); /* Jedes Bild nutzt die halbe Breite minus halbem Gap */
+    height: 180px;          /* Einheitliche Höhe */
+    object-fit: cover;      /* Verhindert Verzerrung */
+    border-radius: 4px;
+}
+
+/* Optimierung für Mobilgeräte: Bilder untereinander, wenn es zu eng wird */
+@media (max-width: 480px) {
+    .img-wrapper {
+        flex-direction: column;
+    }
+    .img-wrapper img {
+        width: 100%;
+    }
+}
+.price-tag {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--black);
+    margin: 15px 0;
+    padding: 5px;
+    background: var(--input-bg);
+    border-radius: 4px;
+}
+
+.price-tag span {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #666;
+}

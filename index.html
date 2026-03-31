@@ -1,0 +1,232 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service-Profi | Garten - Miete - Transport</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="is-home">
+
+    <header id="main-nav">
+        <nav>
+            <div class="logo" onclick="showSection('home')">SERVICE<span>PROFI</span></div>
+            <ul>
+                <li><a href="javascript:void(0)" onclick="showSection('garten')">Gartenpflege</a></li>
+                <li><a href="javascript:void(0)" onclick="showSection('miet')">Mietservice</a></li>
+                <li><a href="javascript:void(0)" onclick="showSection('transport')">Transportservice</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-logo">SERVICE<span>PROFI</span></div>
+                <h1>Willkommen bei Ihrem Profi-Dienstleister</h1>
+                <p class="hero-subtitle">Wählen Sie einen Bereich, um mehr zu erfahren:</p>
+                <div class="hero-buttons">
+                    <button class="main-btn" onclick="showSection('garten')">Garten-Landschaftspflege</button>
+                    <button class="main-btn" onclick="showSection('miet')">Mietservice</button>
+                    <button class="main-btn" onclick="showSection('transport')">Transportservice</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="garten" class="content-section" style="display:none;">
+            <h2>Garten- & Landschaftspflege</h2>
+            <p style="margin-bottom: 30px;">Wir kümmern uns um Ihr Grün – professionell und zuverlässig.</p>
+            
+            <div class="grid-container">
+                
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="img/img 3.webp" alt="Pflaster schmutzig">
+                        <img src="img/img 8.jpg" alt="Pflaster sauber">
+                    </div>
+                    <h3>Ganzjährige Pflege</h3>
+                    <p>Individuelle Betreuung für Ihren Garten zu jeder Jahreszeit.</p>
+                    <button onclick="openForm('Gartenpflege: Ganzjährig')">Jetzt anfragen</button>
+                </div>
+
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="img/img 1.png" alt="Pflaster schmutzig">
+                        <img src="img/img 6.jpg" alt="Pflaster sauber">
+                    </div>
+                    <h3>Hecken- & Strauchschnitt</h3>
+                    <p>Präziser Form- und Rückschnitt für eine gepflegte Optik.</p>
+                    <button onclick="openForm('Gartenpflege: Heckenschnitt')">Jetzt anfragen</button>
+                </div>
+
+                <div class="card">
+                    <img src="img/img 10.jpg" alt="Pflasterpflege">
+                    <h3>Rasenpflege & Neuanlage</h3>
+                    <p>Mähen, Vertikutieren oder neuer Rollrasen für sattes Grün.</p>
+                    <button onclick="openForm('Gartenpflege: Pflasterpflege')">Jetzt anfragen</button>
+                </div>
+
+                <div class="card">
+                    <img src="img/img 11.jpeg" alt="Böschungspflege und Mulcharbeiten">
+                    <h3>Rasenpflege & Neuanlage</h3>
+                    <p>Mähen, Vertikutieren oder neuer Rollrasen für sattes Grün.</p>
+                    <button onclick="openForm('Gartenpflege: Pflasterpflege')">Jetzt anfragen</button>
+                </div>
+
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="img/img 2.png" alt="Rasenkantenschnitt">
+                        <img src="img/img 9.avif" alt="Rasenmähen">
+                    </div>
+                    <h3>Rasenpflege & Mäharbeiten</h3>
+                    <p>Mähen, Vertikutieren und pflege....</p>
+                    <button onclick="openForm('Gartenpflege: Rasenpflege')">Jetzt anfragen</button>
+                </div>
+
+                <div class="card">
+                    <img src="img/img 4.png" alt="Baumfällung">
+                    <h3>Baumfällung & Schnitt</h3>
+                    <p>Sichere Fällungen und fachgerechte Baumpflege.</p>
+                    <button onclick="openForm('Gartenpflege: Baumfällung')">Jetzt anfragen</button>
+                </div>
+
+
+                <div class="card">
+                    <img src="img/img 5.jpg" alt="Baumpflege">
+                    <h3>Baumpflege</h3>
+                    <p>Sichere Fällungen und fachgerechte Baumpflege.</p>
+                    <button onclick="openForm('Gartenpflege: Baumfällung')">Jetzt anfragen</button>
+                </div>
+
+                <div class="card">
+                    <img src="img/img 7.jpg" alt="Bodenbearbeitung">
+                    <h3>Baumfällung & Schnitt</h3>
+                    <p>Sichere Fällungen und fachgerechte Baumpflege.</p>
+                    <button onclick="openForm('Gartenpflege: Baumfällung')">Jetzt anfragen</button>
+                </div>
+
+                <div class="card">
+                    <img src="img/img 14.avif" alt="Teichpflege">
+                    <h3>Teichpflege</h3>
+                    <p>Sichere Fällungen und fachgerechte Baumpflege.</p>
+                    <button onclick="openForm('Gartenpflege: Baumfällung')">Jetzt anfragen</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="miet" class="content-section" style="display:none;">
+            <h2>Mietpark</h2>
+
+            <div class="grid-container">
+                
+                
+                <div class="card">
+                    <img src="img/img 19.avif" alt="Bagger">
+                    <h3>Kettendumper (500kg) </h3>
+                    <p>Inkl. Tieflöffel nach Wahl. Ideal für Gräben und Fundamente.</p>
+                    <div class="price-tag">95,00 € <span>/ Tag zzgl. MwSt.</span></div>
+                    <button onclick="openForm('Miete: Bagger')">Jetzt anfragen</button>
+                </div>
+
+                <div class="card">
+                    <img src="img/img 16.jpg" alt="Bodenfäse">
+                    <h3>Bodenfräse</h3>
+                    <p>Inkl. Tieflöffel nach Wahl. Ideal für Gräben und Fundamente.</p>
+                    <div class="price-tag">95,00 € <span>/ Tag zzgl. MwSt.</span></div>
+                    <button onclick="openForm('Miete: Bodenfräse')">Jetzt anfragen</button>
+                </div>
+
+                <div class="card">
+                    <img src="img/img 17.jpg" alt="Anhänger">
+                    <h3>Anhänger(Kipper) 3T</h3>
+                    <p>Inkl. Tieflöffel nach Wahl. Ideal für Gräben und Fundamente.</p>
+                    <div class="price-tag">95,00 € <span>/ Tag zzgl. MwSt.</span></div>
+                    <button onclick="openForm('Miet: Anhänger')">Jetzt anfragen</button>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+        <section id="transport" class="content-section" style="display:none;">
+            <h2>Transportservice</h2>
+
+            <div class="grid-container">
+
+                <div class="card">
+                    <img src="img/img 19.avif" alt="Sprinter">
+                    <h3>Firmentransporte mit dem Sprinter </h3>
+                    <p>Inkl. Tieflöffel nach Wahl. Ideal für Gräben und Fundamente.</p>
+                    <button onclick="openForm('Miete: Bagger')">Jetzt anfragen</button>
+                </div>
+
+                <div class="card">
+                    <img src="img/img 19.avif" alt="Schüttgut Transporte">
+                    <h3>Schüttgut Transporte</h3>
+                    <p>Inkl. Tieflöffel nach Wahl. Ideal für Gräben und Fundamente.</p>
+                    <button onclick="openForm('Miete: Bagger')">Jetzt anfragen</button>
+                </div>
+
+                <div class="card">
+                    <img src="img/img 19.avif" alt="Personen Transporte">
+                    <h3>Taxiservice</h3>
+                    <p>Inkl. Tieflöffel nach Wahl. Ideal für Gräben und Fundamente.</p>
+                    <button onclick="openForm('Miete: Bagger')">Jetzt anfragen</button>
+                </div>
+
+                <div class="card">
+                    <img src="img/img 19.avif" alt="Personen Transporte">
+                    <h3>Barrierefreier Fahrdienst/Mobilitätsdienst für Menschen mit Handicap</h3>
+                    <p>Inkl. Tieflöffel nach Wahl. Ideal für Gräben und Fundamente.</p>
+                    <button onclick="openForm('Miete: Bagger')">Jetzt anfragen</button>
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeForm()">&times;</span>
+            <h3>Anfrage: <span id="selectedService"></span></h3>
+            <form action="justin.schlaf_dienstleistungen@yahoo.com" method="post" enctype="text/plain">
+                <input type="hidden" id="serviceInput" name="Gewählte_Leistung">
+                
+                <div class="form-group">
+                    <select name="Anrede" required>
+                        <option value="" disabled selected>Anrede wählen</option>
+                        <option value="Herr">Herr</option>
+                        <option value="Frau">Frau</option>
+                        <option value="Firma">Firma / Divers</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <input type="text" name="Vorname" placeholder="Vorname" required>
+                    <input type="text" name="Nachname" placeholder="Nachname" required>
+                </div>
+
+                <input type="text" name="Strasse" placeholder="Straße / Hausnummer" required>
+                <div class="form-row">
+                    <input type="text" name="PLZ" placeholder="PLZ" required style="flex: 0.3;">
+                    <input type="text" name="Ort" placeholder="Ort" required style="flex: 0.7;">
+                </div>
+
+                <input type="email" name="Email" placeholder="E-Mail Adresse" required>
+                <input type="tel" name="Telefon" placeholder="Telefonnummer" required>
+                
+                <textarea name="Nachricht" placeholder="Ihre Nachricht oder spezielle Wünsche..." rows="4"></textarea>
+                
+                <button type="submit" class="submit-btn">KOSTENLOSE ANFRAGE SENDEN</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
